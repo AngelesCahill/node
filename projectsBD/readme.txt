@@ -1,0 +1,1 @@
+Node - express - sequelize - postgres sql
