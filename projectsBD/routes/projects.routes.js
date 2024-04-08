@@ -6,6 +6,7 @@ import {
     updateProject,
     deleteProject,
     showProject,
+    getProjectTasks,
 } from "../controllers/projects.controller.js";
 
 //obtener todos los proyectos
@@ -18,5 +19,7 @@ router.put("/projects/:id", updateProject);
 router.delete("/projects/:id", deleteProject);
 //Mostrar un proyecto determinado
 router.get("/projects/:id", showProject);
+//obtener las tareas de un proyecto determinado
+router.get("/projects/:id/tasks", getProjectTasks);
 
 export default router;
